@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="a.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <div class="background-text">?</div>
+
+        <!-- Hiragana Button (Top-Right) -->
+        <a href="../index.html">
+        <div class="hiragana-button">
+            <div class="hiragana-bg"></div>
+            <div class="hiragana">about me</div>
+        </div>
+        </a>
+        <div id="counter">1/9</div>
+
+        <div class="content">
+            <div class="card">
+                <div id="main-character">け</div>
+                <div id="reading">ke</div>
+                <img id="image" src="images/ke.webp" alt="Ke Image">
+                <div id="word">keg</div>
+            </div>
+
+            <button class="arrow left" onclick="prevContainer()">&#9664;</button>
+            <button class="arrow right" onclick="nextContainer()">&#9654;</button>
+
+            <!-- Button Container -->
+            <div id="b1" class="button-container">
+                <div class="button" onclick="updateContent('あ', 'a', 'images/あ.webp', 'letter A')">あ</div>
+                <div class="button" onclick="updateContent('い', 'i', 'images/い.webp', 'eel')">い</div>
+                <div class="button" onclick="updateContent('う', 'u', 'images/う.webp', 'letter U')">う</div>
+                <div class="button" onclick="updateContent('え', 'e', 'images/え.webp', 'exotic bird')">え</div>
+                <div class="button" onclick="updateContent('お', 'o', 'images/お.webp', 'letter O')">お</div>
+            </div>
+            <div id="b2" class="button-container">
+                <div class="button" onclick="updateContent('か', 'ka', 'images/か.webp', 'kankan dance')">か</div>
+                <div class="button" onclick="updateContent('き', 'ki', 'images/き.webp', 'key')">き</div>
+                <div class="button" onclick="updateContent('く', 'ku', 'images/く.webp', 'koo-koo')">く</div>
+                <div class="button" onclick="updateContent('け', 'ke', 'images/ke.webp', 'keg')">け</div>
+                <div class="button" onclick="updateContent('こ', 'ko', 'images/こ.webp', 'cola')">こ</div>
+            </div>
+            <div id="b3" class="button-container">
+                <div class="button" onclick="updateContent('さ', 'sa', 'images/さ.webp', 'he SAw something')">さ</div>
+                <div class="button" onclick="updateContent('し', 'shi', 'images/し.webp', 'sheep')">し</div>
+                <div class="button" onclick="updateContent('す', 'su', 'images/す.webp', 'sushi')">す</div>
+                <div class="button" onclick="updateContent('せ', 'se', 'images/せ.webp', 'sénior')">せ</div>
+                <div class="button" onclick="updateContent('そ', 'so', 'images/そ.webp', 'letters S O ')">そ</div>
+            </div>
+            <div class="button-container">
+                <div class="button" onclick="updateContent('た', 'ta', 'images/た.webp', 'letters ta')">た</div>
+                <div class="button" onclick="updateContent('ち', 'chi', 'images/ち.webp', 'laughing chi-chi-chi-chi-chi')">ち</div>
+                <div class="button" onclick="updateContent('つ', 'tsu', 'images/つ.webp', 'tsunami')">つ</div>
+                <div class="button" onclick="updateContent('て', 'te', 'images/て.webp', 'letter t')">て</div>
+                <div class="button" onclick="updateContent('と', 'to', 'images/と.webp', 'big toe')">と</div>
+            </div>
+            <div class="button-container">
+                <div class="button" onclick="updateContent('な', 'na', 'images/な.webp', 'nun')">な</div>
+                <div class="button" onclick="updateContent('に', 'ni', 'images/に.webp', 'nice smile')">に</div>
+                <div class="button" onclick="updateContent('ぬ', 'nu', 'images/ぬ.webp', 'noodle')">ぬ</div>
+                <div class="button" onclick="updateContent('ね', 'ne', 'images/ね.webp', 'neko (cat)')">ね</div>
+                <div class="button" onclick="updateContent('の', 'no', 'images/の.webp', 'NO!')">の</div>
+            </div>
+            <div class="button-container">
+                <div class="button" onclick="updateContent('ま', 'ma', 'images/ま.webp', 'mast')">ま</div>
+                <div class="button" onclick="updateContent('み', 'mi', 'images/み.webp', 'mime')">み</div>
+                <div class="button" onclick="updateContent('む', 'mu', 'images/む.webp', 'muuuu like a cow')">む</div>
+                <div class="button" onclick="updateContent('め', 'me', 'images/め.webp', 'me (eye)')">め</div>
+                <div class="button" onclick="updateContent('も', 'mo', 'images/も.webp', 'MOre fish')">も</div>
+            </div>
+            <div class="button-container">
+                <div class="button" onclick="updateContent('は', 'ha', 'images/は.webp', 'letters HA')">は</div>
+                <div class="button" onclick="updateContent('ひ', 'hi', 'images/ひ.webp', 'HI-HI-HI')">ひ</div>
+                <div class="button" onclick="updateContent('ふ', 'fu', 'images/ふ.webp', 'having FUN')">ふ</div>
+                <div class="button" onclick="updateContent('へ', 'he', 'images/へ.webp', 'helmet')">へ</div>
+                <div class="button" onclick="updateContent('ほ', 'ho', 'images/ほ.webp', 'letters HO')">ほ</div>
+            </div>
+            <div class="button-container">
+                <div class="button" onclick="updateContent('ら', 'ra', 'images/ら.webp', 'rapper')">ら</div>
+                <div class="button" onclick="updateContent('り', 'ri', 'images/り.webp', 'riding a wave')">り</div>
+                <div class="button" onclick="updateContent('る', 'ru', 'images/る.webp', 'ruler')">る</div>
+                <div class="button" onclick="updateContent('れ', 're', 'images/れ.webp', 'reptile')">れ</div>
+                <div class="button" onclick="updateContent('ろ', 'ro', 'images/ろ.webp', 'roll of dice')">ろ</div>
+            </div>
+            <div class="button-container">
+                <div class="button" onclick="updateContent('や', 'ya', 'images/や.webp', 'yak')">や</div>
+                <div class="button" onclick="updateContent('わ', 'wa', 'images/わ.webp', 'wasp')">わ</div>
+                <div class="button" onclick="updateContent('ゆ', 'yu', 'images/ゆ.webp', 'yummy fish')">ゆ</div>
+                <div class="button" onclick="updateContent('を', 'wo/ o', 'images/を.webp', 'work')">を</div>
+                <div class="button" onclick="updateContent('よ', 'yo', 'images/よ.webp', 'letters YO')">よ</div>
+                <div class="button" onclick="updateContent('ん', 'n', 'images/ん.webp', 'letter n')">ん</div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Made with help of chatGPT -->
