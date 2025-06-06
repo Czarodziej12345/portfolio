@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan's portfolio</title>
+    <link rel="icon" type="image/x-icon" href="j.ico">
+    <link rel="stylesheet" href="styles.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+          const isSmallScreen = window.innerWidth < 768;
+      
+          if (isMobile || isSmallScreen) {
+            // Clear content and set white background
+            document.body.innerHTML = '';
+            document.body.style.backgroundColor = '#ffffff';
+            document.body.style.margin = '0';
+            document.body.style.padding = '0';
+      
+            // Create message container
+            const message = document.createElement('div');
+            message.innerHTML = `This page isn't available on mobile. Access another project: <a href="hiragana/page.html">hiragana</a>`;
+            message.style.position = 'fixed';
+            message.style.top = '50%';
+            message.style.left = '50%';
+            message.style.transform = 'translate(-50%, -50%)';
+            message.style.background = '#fff';
+            message.style.padding = '20px 30px';
+            message.style.border = '1px solid #ccc';
+            message.style.borderRadius = '10px';
+            message.style.fontFamily = 'sans-serif';
+            message.style.fontSize = '1.1em';
+            message.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+            message.style.zIndex = '9999';
+      
+            document.body.appendChild(message);
+          }
+        });
+      </script>
+      
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-text">
+            <h1 class="name">Jan<br>Alwasiak</h1>
+            <h3 class="description">tech & design</h3>
+            <a href="#bottom" style="text-decoration: none;">
+            <div id="white-box">
+                <div class="reach">reach out! 🤙</div>
+            </div>
+            </a>
+        </div>
+        <img id="backgroundimg" src="bacgroundmid.webp" alt="Background Image">
+         
+    </div>
+    <div class="menu">
+        <a href="#portfolio"><div class="Rectangle1"><div class="menu-text">Portfolio</div></div></a>
+        <a href="#experiences"><div class="Rectangle2"><div class="menu-text">About me</div></div></a>
+        <a href="hiragana/page.html"><div class="Rectangle3"><div class="menu-text">Hiragana</div></div></a>
+    </div>
+
+    <div class="projects">
+        <div class="project" id="portfolio">
+            <img class="project-screenshot" src="hiragana.png" alt="Project 1">
+            <h2><a href="hiragana/page.html" class="button">Hiragana Cards</a></h2>
+            <p>Through developing the Hiragana Cards web app, I demonstrated strong skills in front-end development, including proficient use of <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> to build a clean, user-friendly, and accessible interface. One of the core strengths I bring is the ability to create <b>minimalist solutions to complex problems</b>—transforming the overwhelming challenge of learning a large Japanese syllabary into an approachable, focused experience by prioritizing essential content and intuitive interaction. I applied thoughtful <b>UX/UI design principles</b> to reduce cognitive load, grouping information logically and removing distractions, which significantly improves user retention and engagement. My work shows a commitment to <b>elegant simplicity</b>, balancing functionality and aesthetic clarity, while maintaining <b>mobile responsiveness</b> and <b>accessibility</b> for diverse users. This project highlights my <b>problem-solving skills</b>, attention to detail, and dedication to delivering polished, maintainable, and inclusive software solutions—qualities I am eager to bring to future development roles.</p>
+            <div class="super-gradient">
+                <div class="tech" >html<br/>css<br/>javascript<br/>github pages<br/>figma</div>
+            </div>
+              
+        </div>
+        <div class="project">
+            <img class="project-screenshot" src="finance.png" alt="Project 2">
+            <h2><a href="https://cs50.harvard.edu/x/2025/psets/9/finance/" class="button">finance cs50 homework</a></h2>
+            <p>Through building the CS50 Finance project, I gained hands-on experience with <b>Flask</b> by developing a fully functional web app where users can <b>register, log in, buy and sell stocks</b>, and track their portfolio in real time. I worked with <b>Python, SQL, and Jinja templates</b> to handle <b>user authentication</b>, <b>form validation</b>, and <b>dynamic content</b> using <b>server-side rendering</b>. By leveraging <b>Flask’s rendering engine</b>, I ensured that pages loaded efficiently while keeping the app <b>secure and responsive</b>. This project deepened my understanding of <b>full-stack development</b>, <b>API integration</b>, and <b>database management</b>—all while focusing on clean, maintainable code.</p>
+            <div class="super-gradient">
+                <div class="tech">flask<br/>jinja<br/>sql<br/>python<br/>API requests<br>password hashing</div>
+            </div>
+        </div>
+        <div class="project">
+            <img class="project-screenshot" src="figma.webp" alt="Project 3 - figma">
+            <h2>work in figma</h2>
+            <p>I use Figma to create design assets that help teams move quickly and stay aligned. Moodboards to set the visual direction early on. <b>Sitemaps</b> that give a clear overview of structure and flow. <b>Wireframes</b> that focus on usability and keep things intuitive, and <b>design prototypes</b> that make it easy for stakeholders to give feedback and for developers to understand how things should work. It's all about making the design process smoother and more collaborative.</p>
+            <div class="super-gradient">
+                <div class="tech">moodboards<br/>sitemaps<br/>wireframes<br/>design prototypes</div>
+            </div>
+        </div>
+
+        <div class="project">
+            <img class="project-screenshot jpglast" src="project4.webp" alt="Project 4 - data recovery">
+            <h2>data recovery in C</h2>
+            <p>Developed a <b>C program</b> for <b>forensic data recovery</b> that accurately reconstructs deleted <b>JPEG images</b> from <b>raw memory card data</b>. This involved scanning for <b>binary file signatures</b>, demonstrating strong command of <b>low-level memory management</b> and precise <b>file I/O operations</b>.
+
+                Additionally, I implemented various <b>photo filter algorithms</b> directly manipulating <b>pixel data</b> in C, including <b>grayscale</b>, <b>sepia</b>, <b>reflection</b>, and <b>blur</b>.
+                
+                My portfolio also includes a <b>spell checker</b> built in C, which efficiently identifies <b>misspelled words</b> in <b>text files</b> using a <b>hash table</b>. This project showcases my expertise in <b>data structures</b>, <b>dynamic memory management</b>, and <b>algorithm optimization</b>.
+                
+                These projects collectively underscore my skills in <b>C programming</b>, my ability to work with <b>raw data</b> and diverse <b>file formats</b>, and my application of <b>algorithmic problem-solving</b> to real-world challenges in <b>image processing</b>, <b>data recovery</b>, and <b>text analysis</b>.
+            <div class="super-gradient">
+                <div class="tech">moodboards<br/>sitemaps<br/>wireframes<br/>design prototypes</div>
+            </div>
+        </div>
+
+        <div class="cv">
+            <div class="card learning">
+                <div id="experiences"><strong>Experience & Education</strong></div>
+              
+                <div>
+                  <strong>Motivated</strong> and <strong>adaptable</strong> individual with a strong foundation in
+                  <strong>coding</strong>, <strong>UX/UI design</strong>, and <strong>strategic thinking</strong>.
+                  I bring a unique blend of technical knowledge, creativity, and interpersonal skills—ready to contribute to meaningful projects and grow in a dynamic environment.
+                </div>
+              
+                <h3><strong>Education & Certifications</strong></h3>
+                <ul>
+                  <li><strong>CS50 – Computer Science</strong>, Harvard (C, Python, Flask, SQL)</li>
+                  <li><strong>UX & Web Design</strong> in Figma – Louis Paquet</li>
+                  <li><strong>Effective B2B Marketing Strategies</strong> – Poznań University of Economics and Business</li>
+                  <li><strong>Project Management Principles Certificate</strong> – PMI</li>
+                  <li><strong>Retail Customer Service</strong> – LinkedIn Learning</li>
+                  <li><strong>Intercultural Management</strong> – HTW Berlin</li>
+                  <li><strong>International Business Law</strong> – HTW Berlin</li>
+                  <li><strong>Business Mathematics</strong> – HTW Berlin</li>
+                </ul>
+              
+                <div>Currently studying <strong>Occupational Therapy</strong> (Postsecondary School, 2025)</div>
+                <div>Previously enrolled in <strong>International Business</strong> at HTW Berlin</div>
+              
+                <h3><strong>Skills</strong></h3>
+                <ul>
+                  <li>tech:<h3>C, Python, Flask, SQL, HTML, CSS, JavaScript </h3></li>
+                  <li>Design:<h3>Figma, GIMP, Inkscape, Krita</h3></li>
+                  <li>Project Management: <h3>Trello, Excel/ Google sheets</h3></li>
+                  <li><strong>Soft Skills:</strong>Excellent communication, strategic problem-solving, quick adaptation, continuous learning</li>
+                  <li><strong>Mensa</strong> – Admitted with IQ of 132 points (SD=15)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div id="bottom">
+                design and code by Jan Alwasiak
+            </div>
+
+            <div class="icon"><a href="https://www.behance.net/janalwasiak"><img src="icons/behance.png" alt="icon" width="40" height="40"></a></div>
+            <div class="icon"><a href="mailto:jan.alwasiak+projects@gmail.com"><img src="icons/gmail.png" alt="icon" width="40" height="40"></a></div>
+            <div class="icon"><a href="https://www.linkedin.com/in/jan-alwasiak-b75462264/"><img src="icons/linkedin.png" alt="icon" width="40" height="40"></a></div>
+            <div class="icon"><a href="https://github.com/Czarodziej12345"><img src="icons/github.png" alt="icon" width="40" height="40"></a></div>
+
+
+            <div id="bye">
+                BYE.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
