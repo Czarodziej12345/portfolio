@@ -245,6 +245,12 @@ p{
     object-fit: cover;
     object-position: top;
     border-radius: 31px;
+    transition: filter 0.5s ease;
+    filter: saturate(100%);
+}
+
+.project-screenshot:hover {
+  filter: saturate(0%);
 }
 
 .jpglast{
@@ -285,7 +291,7 @@ p{
   margin-bottom: 1.66vw;
   padding: 3%;
   border-radius: 31px;
-  background-image: url('bg4.webp');
+  background-image: url('elements/bg4.webp');
   position: relative;
 }
 
